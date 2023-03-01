@@ -26,5 +26,10 @@
 	"scripts": {
 		"test": "jest",
 		"build": "tsc"
-	}
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	]
 }
