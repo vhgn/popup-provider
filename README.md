@@ -16,17 +16,17 @@ See an example in CodeSandbox
 // ... `const context = useContext(PopupContext)` in the component
 
 const isSure = await openPopup<number>(
-	context,
-	(close) => {
-		return (
-			<div>
-				<p>Are you sure?</p>
-				<button onClick={() => close(true)}>Yes</button>
-				<button onClick={() => close(false)}>No</button>
-			</div>
-		);
-	},
-	'are_you_sure' // any unique string
+  context,
+  (close) => {
+    return (
+      <div>
+        <p>Are you sure?</p>
+        <button onClick={() => close(true)}>Yes</button>
+        <button onClick={() => close(false)}>No</button>
+      </div>
+    );
+  },
+  'are_you_sure' // any unique string
 );
 ```
 
@@ -34,14 +34,14 @@ And provide a place to render your popups
 
 ```tsx
 return (
-	<div>
-		{context.layers.map(({ component, resolver, id }) => (
-			<div key={id}>
-				<section>{component}</section>
-				<button onClick={resolver}>Close this</button>
-			</div>
-		))}
-	<div>
+  <div>
+    {context.layers.map(({ component, resolver, id }) => (
+      <div key={id}>
+        <section>{component}</section>
+        <button onClick={resolver}>Close this</button>
+      </div>
+    ))}
+  <div>
 )
 ```
 
