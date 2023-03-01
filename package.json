@@ -1,6 +1,6 @@
 {
 	"name": "popup-provider",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Await popups in React",
 	"main": "index.js",
 	"repository": "https://github.com/vhgn/popup-provider",
