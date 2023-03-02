@@ -1,8 +1,9 @@
 {
 	"name": "popup-provider",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"description": "Await popups in React",
-	"main": "index.js",
+	"main": "dist/popup.js",
+	"types": "dist/popup.d.ts",
 	"repository": "https://github.com/vhgn/popup-provider",
 	"author": "Vahagn",
 	"license": "MIT",
